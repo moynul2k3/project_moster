@@ -9,19 +9,72 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
-  <link rel="stylesheet" crossorigin href="/assets/index-1e95LGQo.css">
+
+    <style>
+        html,
+        body {
+        position: relative;
+        height: 100%;
+        }
+
+        body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+        }
+
+        .swiper {
+        width: 100%;
+        height: 100%;
+        }
+
+        .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        }
+    </style>
+  <link rel="stylesheet" crossorigin href="/assets/index-B_a75Gd9.css">
 </head>
 <body class="bg-emerald-500 ">
-    <header class="flex justify-between items-center max-md:h-12 md:h-16 lg:h-20 bg-emerald-950/30 backdrop-blur-lg max-md:px-2 md:px-10 lg:px-20">
+    <header class="flex justify-between items-center w-full max-md:h-12 md:h-16 lg:h-20 bg-emerald-950/30 backdrop-blur-lg max-md:px-2 md:px-10 lg:px-20 fixed top-0">
         <div class="h-full flex justify-center items-center">
             <img src="data:image/png;base64,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" alt="" class="h-[70%]">
         </div>
         <div class="flex justify-center items-center gap-5 text-white">
-            <a href="#" class="hover:text-red">Home</a>
-            <a href="#" class="hover:text-red">Portfolio</a>
-            <a href="#" class="hover:text-red">Contact</a>
-            <a href="#" class="hover:text-red">Services</a>
-            <a href="#" class="hover:text-red">About us</a>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">Home</a>
+                <p class="link_underline"></p>
+            </div>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">Portfolio</a>
+                <p class="link_underline"></p>
+            </div>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">Contact</a>
+                <p class="link_underline"></p>
+            </div>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">Services</a>
+                <p class="link_underline"></p>
+            </div>
+            <div class="w-20 py-1 flex flex-col justify-center items-center group">
+                <a href="#" class="text-white/70 hover:text-white">About us</a>
+                <p class="link_underline"></p>
+            </div>
         </div>
         <div class="max-md:h-8 md:h-12 lg:h-10 max-md:w-8 md:w-12 lg:w-10 flex justify-center items-center rounded-full bg-white">
             <i class='bx bx-user text-xl'></i>
@@ -29,10 +82,61 @@
     </header>
 
 
-    <section class="h-[600px] w-full">
+    <section class="h-[600px] w-full mt-20 bg-fixed flex justify-center items-center " style="background-image: url('/assets/image1-DznX8erk.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="h-full w-full bg-black/40 flex justify-center items-center">
+            <p class="text-6xl text-white font-bold text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, corrupti.</p>
+        </div>
+    </section>
 
+
+
+    <section class="h-[600px] w-full max-md:px-2 md:px-10 lg:px-20 flex flex-col justify-center items-center gap-20 mt-40">
+        <div class="swiper mySwiper w-full h-[500px]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide bg-fixed" style="background-image: url('/assets/image1-DznX8erk.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                    <p class="text-6xl text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, laboriosam eaque? Reprehenderit corporis velit similique reiciendis obcaecati, hic officia quisquam nostrum doloremque maiores maxime cum natus expedita consequatur vero! Eligendi.</p>
+                </div>
+                <div class="swiper-slide" style="background-image: url('/assets/image1-DznX8erk.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background-image: url('/assets/image1-DznX8erk.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background-image: url('/assets/image1-DznX8erk.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+                <div class="swiper-slide" style="background-image: url('/assets/image1-DznX8erk.webp'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+    <section class="h-[600px] w-full max-md:px-2 md:px-10 lg:px-20 flex flex-col justify-center items-center gap-20 mt-40">
+        <p class="text-4xl text-white py-2 px-20 border-b-2 border-white">Contact with us</p>
+
+        <form action="." method="post" class="w-full h-auto bg-white/60 backdrop-blur-2xl rounded-md shadow-md shadow-emerald-950 p-10">
+            <div class="flex justify-center ">
+                <p class="text-4xl font-thin text-center text-emerald-700 w-3/5 border-b-2 border-emerald-700 py-2 ">Registration Form</p>
+            </div>
+
+            <div class="grid grid-cols-2 gap-x-20 gap-y-5 pt-10">
+                <div class="flex flex-col ">
+                    <label for="first_name" class="text-lg font-thin text-emerald-700">First Name</label>
+                    <input type="text" name="first_name" id="first_name" class="bg-transparent border-b-2 border-emerald-300 h-10 text-emerald-600 focus:outline-none focus:border-emerald-500 placeholder:text-black/20" placeholder="Enter your first name">
+                </div>
+                
+
+            </div>
+        </form>
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+            var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+            },
+            });
+        </script>
 </body>
 </html>
